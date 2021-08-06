@@ -1,9 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import styles from "./Navbar.module.css"
 
 const Navbar = () => {
     return (
         <div>
-            <h1>This is Navabr</h1>
+            
+            <div className={styles.navbarFlexClass}>
+                <Link to="/" >Home</Link>
+                <Link to="/login">Login</Link>
+            </div>
             
         </div>
     )
