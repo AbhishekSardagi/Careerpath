@@ -4,6 +4,7 @@ import { Navbar } from "../Components/Navbar/Navbar";
 import { Home } from "../Components/Homepage/Home";
 import { Login } from "../Components/Login/Login";
 import { SearchPage } from "../Components/SearchPage/SearchPage";
+import Footer from "../Components/Footer/Footer";
 
 const Routes = () => {
   return (
@@ -14,6 +15,7 @@ const Routes = () => {
         <Route path="/login" component={Login} />
         <Route path="/searchpage" component={SearchPage} />
       </Switch>
+      <Footer />
     </div>
   );
 };

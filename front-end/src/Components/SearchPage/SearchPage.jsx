@@ -4,7 +4,6 @@ import Box from "@material-ui/core/Box";
 import AirplayIcon from "@material-ui/icons/Airplay";
 import FlightIcon from "@material-ui/icons/Flight";
 import GavelIcon from "@material-ui/icons/Gavel";
-import FaceIcon from "@material-ui/icons/Face";
 function SearchPage() {
   return (
     <div>
