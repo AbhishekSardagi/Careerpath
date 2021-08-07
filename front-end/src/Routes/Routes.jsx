@@ -31,4 +31,4 @@ const Routes = () => {
     )
 }
 
-export {Routes}
+export { Routes };
