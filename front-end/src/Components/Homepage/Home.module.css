@@ -1,0 +1,36 @@
+.aboutsectionMainClass{
+    display: 70vw;
+}
+.aboutSectionFlexClass{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+.aboutIMG{
+    width: 30vw;
+}
+
+.inputFieldClass{
+    width: 53vw;
+    padding: 1vw;
+    margin: 1vw;
+    font-size: 2vw;
+}
+.inputButtonClass{
+    width: 10vw;
+    padding: 0.5vw;
+    margin: 0.5vw;
+    font-size: 2vw;
+    border-radius: 10px;
+}
+
+.careerChoiceButtons{
+    width: 15vw;
+    height: 7vh;
+    font-size: 1.5vw;
+    padding: 0.2vw;
+    margin: 0.2vw;
+}
