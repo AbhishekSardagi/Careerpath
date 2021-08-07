@@ -6,6 +6,7 @@ import { Login } from "../Components/Login/Login";
 import { SearchPage } from "../Components/SearchPage/SearchPage";
 import Footer from "../Components/Footer/Footer";
 import { SingleCourse } from "../Components/SingleCourse/SingleCourse";
+import { StageOne } from "../Components/StageOne/StageOne";
 
 const Routes = () => {
   return (
@@ -14,8 +15,9 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
-        <Route exact path="/searchpage" component={SearchPage} />
-        <Route path="/searchpage/singlecourse" component={SingleCourse} />
+        {/* <Route exact path="/searchpage" component={SearchPage} /> */}
+        <Route exact path="/stageone" component={StageOne} />
+        <Route path="/stageone/singlecourse" component={SingleCourse} />
       </Switch>
       <Footer />
     </div>
