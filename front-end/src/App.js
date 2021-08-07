@@ -1,12 +1,25 @@
 import './App.css';
+import Header from './Components/Header/Header';
 import { Routes } from './Routes/Routes';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Routes/>
-    </div>
-  );
+   
+ <>
+ <Header/>
+<Routes/>
+
+ </>
+  
+ 
+     
+       
+    
+   
+  )
 }
+
 
 export default App;

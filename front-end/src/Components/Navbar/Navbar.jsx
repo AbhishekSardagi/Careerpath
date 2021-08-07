@@ -7,8 +7,7 @@ const Navbar = () => {
         <div>
             
             <div className={styles.navbarFlexClass}>
-                <Link to="/" >Home</Link>
-                <Link to="/login">Login</Link>
+               
             </div>
             
         </div>
