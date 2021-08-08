@@ -6,8 +6,7 @@
     flex-direction: row;
     gap: 1vw;
     width: 70vw;
-    margin: auto;
-    margin-bottom: 5vh;
+    margin: 5vh auto 5vh;
 }
 .aboutIMG{
     width: 30vw;
@@ -28,9 +27,40 @@
 }
 
 .careerChoiceButtons{
-    width: 15vw;
+    /* width: 15vw; */
     height: 7vh;
     font-size: 1.5vw;
     padding: 0.2vw;
     margin: 0.2vw;
 }
+
+.content {
+    margin-top: 10vh;
+}
+.content h3{
+    margin: 5vh 0;
+}
+.current {
+    padding: 5vh;
+}
+.current h1{
+    width: 70vw;
+    margin-left: 70vh;
+}
+.options {
+    margin-left: 10vh;
+}
+.options button {
+    position: relative;
+    z-index: 1;
+  }
+  .options button:hover::after {
+    transform: scaleY(1);
+    transition-timing-function: ease-out;
+  }
+  
+  .options button:hover{
+    border: 5px solid #5AB0DB;
+    border-radius: 50px;
+    background: #aaf5cc;
+  }

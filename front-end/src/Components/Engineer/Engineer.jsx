@@ -34,20 +34,18 @@ const useStyles = makeStyles({
   },
 });
 
-function SingleCourse() {
+function Engineer() {
   const classes = useStyles();
   const { singlecoursedata } = useSelector((state) => state.single);
   console.log(singlecoursedata);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(courseDetails());
+    dispatch(courseDetails("stage1d"));
   }, []);
-  function handleClick(val) {
-    dispatch(courseDetails(val));
-  }
+
   return (
     <div>
-      <h1>Single Course </h1>
+      <h1>Choose your Branch? </h1>
 
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="customized table">
@@ -62,16 +60,13 @@ function SingleCourse() {
             {singlecoursedata.map((row) => (
               <StyledTableRow key={row.id}>
                 <StyledTableCell component="th" scope="row">
-                  {row.Title}
+                  <Link to="/stageone/singlecourse/eng/yourpath">
+                    {row.Title}
+                  </Link>
                 </StyledTableCell>
                 <StyledTableCell>{row.description}</StyledTableCell>
                 <StyledTableCell align="right">
-                  <Link
-                    onClick={() => handleClick("stage1d")}
-                    to="/stageone/singlecourse/eng"
-                  >
-                    more
-                  </Link>
+                  <Link>more</Link>
                 </StyledTableCell>
               </StyledTableRow>
             ))}
@@ -81,4 +76,4 @@ function SingleCourse() {
     </div>
   );
 }
-export { SingleCourse };
+export { Engineer };
