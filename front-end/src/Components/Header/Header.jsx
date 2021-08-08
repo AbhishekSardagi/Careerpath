@@ -6,7 +6,7 @@ import SearchIcon from "@material-ui/icons/Search";
 
 
 import { Link, Redirect } from "react-router-dom"
-import Login from '../Login/Login';
+import Login from '../Login/Login1';
 
 
 function Header() {
@@ -19,7 +19,7 @@ function Header() {
                     className="header_searchInput"
                     type="text"
                 />
-                {/* <SearchIcon className="header_searchIcon" /> */}
+                <SearchIcon className="header_searchIcon" />
             </div>
             <div className="header_nav">
                 <Link to="/login" >
