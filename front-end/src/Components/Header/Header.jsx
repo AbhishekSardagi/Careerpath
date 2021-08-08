@@ -19,7 +19,11 @@ function Header() {
                     className="header_searchInput"
                     type="text"
                 />
-                 <SearchIcon className="header_searchIcon" /> 
+
+               
+
+                <SearchIcon className="header_searchIcon" />
+
             </div>
             <div className="header_nav">
                 <Link to="/login" >

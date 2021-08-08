@@ -20,7 +20,7 @@ function StageOne() {
           bgcolor="background.paper"
           m={5}
           p={5}
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "12rem", height: "12rem" }}
         >
           <img
             style={{ width: "100px" }}
@@ -42,7 +42,7 @@ function StageOne() {
           bgcolor="background.paper"
           m={5}
           p={5}
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "12rem", height: "12rem" }}
         >
           <img
             style={{ width: "100px" }}
@@ -65,7 +65,7 @@ function StageOne() {
           bgcolor="background.paper"
           m={5}
           p={5}
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "12rem", height: "12rem" }}
         >
           <img
             style={{ width: "100px" }}
@@ -88,7 +88,7 @@ function StageOne() {
           bgcolor="background.paper"
           m={5}
           p={5}
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "12rem", height: "12rem" }}
         >
           <img
             style={{ width: "100px" }}
@@ -111,7 +111,7 @@ function StageOne() {
           bgcolor="background.paper"
           m={5}
           p={5}
-          style={{ width: "10rem", height: "10rem" }}
+          style={{ width: "12rem", height: "12rem" }}
         >
           <img
             style={{ width: "100px" }}
