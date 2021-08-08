@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -14,14 +13,8 @@ const Routes = () => {
         <Route exact path="/stageone" component={StageOne} />
         <Route path="/stageone/singlecourse" component={SingleCourse} />
       </Switch>
-
-
-
-
-
     </div>
   );
 };
 
 export { Routes };
-
