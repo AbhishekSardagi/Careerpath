@@ -1,14 +1,17 @@
 import "./App.css";
+import Chat from "./Components/Chat";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-import { Navbar } from "./Components/Navbar/Navbar";
 import { Routes } from "./Routes/Routes";
 
 function App() {
   return (
     <>
-      <Navbar />
       <Header />
       <Routes />
+      <div>
+        <Footer />
+      </div>
     </>
   );
 }

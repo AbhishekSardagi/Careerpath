@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 function SearchPage() {
   return (
     <div>
-      <h1>Search Page</h1>
+      <h1 className="box">Search Page</h1>
       <Grid container>
-        <Box
+        <Box className="box"
           boxShadow={3}
           bgcolor="background.paper"
           m={5}
