@@ -4,7 +4,7 @@ import logo from "../../images/logo2.PNG"
 import SearchIcon from "@material-ui/icons/Search";
 
 import {Link, Redirect} from "react-router-dom"
-import Login from '../Login/Login';
+
 
 
 
