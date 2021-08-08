@@ -3,10 +3,16 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import { Link } from "react-router-dom";
 import styles from "./stageone.module.css";
+import { useDispatch } from "react-redux";
+import { courseDetails } from "../../Redux/StageOne/action";
 function StageOne() {
+  const dispatch = useDispatch();
+  const handleClick = (val) => {
+    dispatch(courseDetails(val));
+  };
   return (
     <div className={styles.cont}>
-      <h1>WHAT IS YOUR YOUR STREAM?</h1>
+      <h1>WHICH STREAM ARE YOU INTERESTED IN?</h1>
       <Grid container>
         <Box
           className={styles.a}
@@ -22,7 +28,11 @@ function StageOne() {
             alt="science"
           />{" "}
           <br />
-          <Link className={styles.mh3} to="/stageone/singlecourse">
+          <Link
+            onClick={() => handleClick("stage1s")}
+            className={styles.mh3}
+            to="/stageone/singlecourse"
+          >
             Science
           </Link>
         </Box>
@@ -40,7 +50,11 @@ function StageOne() {
             alt="commerce"
           />{" "}
           <br />
-          <Link className={styles.mh3} to="/stageone/singlecourse">
+          <Link
+            onClick={() => handleClick("stage1c")}
+            className={styles.mh3}
+            to="/stageone/singlecourse"
+          >
             {" "}
             Commerce
           </Link>
@@ -59,7 +73,11 @@ function StageOne() {
             alt="Arts"
           />{" "}
           <br />
-          <Link className={styles.mh3} to="/stageone/singlecourse">
+          <Link
+            onClick={() => handleClick("stage1a")}
+            className={styles.mh3}
+            to="/stageone/singlecourse"
+          >
             {" "}
             Arts
           </Link>
@@ -78,7 +96,11 @@ function StageOne() {
             alt="Diploma"
           />
           <br />
-          <Link className={styles.mh3} to="/stageone/singlecourse">
+          <Link
+            onClick={() => handleClick("stage1d")}
+            className={styles.mh3}
+            to="/stageone/singlecourse"
+          >
             {" "}
             Diploma
           </Link>
@@ -97,7 +119,11 @@ function StageOne() {
             alt="iti"
           />
           <br />
-          <Link className={styles.mh3} to="/stageone/singlecourse">
+          <Link
+            onClick={() => handleClick("stage1i")}
+            className={styles.mh3}
+            to="/stageone/singlecourse"
+          >
             {" "}
             ITI
           </Link>

@@ -1,6 +1,6 @@
 import { compose, createStore, applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk";
-import { singlecourcereducer } from "./SearchPage/reducer";
+import { singlecourcereducer } from "./StageOne/reducer";
 
 const rootReducer = combineReducers({
   single: singlecourcereducer,
