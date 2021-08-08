@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const stage1aSchema = new mongoose.Schema({
+const Stage1aSchema = new mongoose.Schema({
     id: {type:Number, required: false},
     Title: {type:String, required: false},
     Description: {type:String, required: false}
@@ -9,4 +9,4 @@ const stage1aSchema = new mongoose.Schema({
     timestamps: true
 })
 
-module.exports = mongoose.model("stage1a", stage1aSchema);
+module.exports = mongoose.model("stage1a", Stage1aSchema);

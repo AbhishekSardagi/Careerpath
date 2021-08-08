@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const baseSchema = new mongoose.Schema({
+const BaseSchema = new mongoose.Schema({
     id: {type:Number, required: false},
     Title: {type:String, required: false}
 }, {
@@ -8,4 +8,4 @@ const baseSchema = new mongoose.Schema({
     timestamps: true
 })
 
-module.exports = mongoose.model("base", baseSchema);
+module.exports = mongoose.model("base", BaseSchema);
