@@ -8,11 +8,14 @@ import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
 import ForgotPassword from "../Components/ForgotPassword/ForgotPassword";
 import UpdateProfile from "../Components/UpdateProfile/UpdateProfile";
 import { Home } from "../Components/Homepage/Home";
+import { Navbar } from "../Components/Navbar/Navbar";
+import { Footer } from "../Components/Footer/Footer";
+import { StageOne } from "../Components/StageOne/StageOne";
 const Routes = () => {
   return (
     <div>
-      <Router>
-        <AuthProvider>
+      <Navbar />
+      
           <Switch>
             <PrivateRoute exact path="/" component={Home} />
             <PrivateRoute
@@ -24,9 +27,9 @@ const Routes = () => {
             <Route exact path="/login" component={Login} />
             <Route exact path="/logout" component={Logout} />
             <Route exact path="/forgot-password" component={ForgotPassword} />
-          </Switch>
-        </AuthProvider>
-      </Router>
+            <Route path="/stageone" component={StageOne} />
+           <Switch/>
+      <Footer />
     </div>
   );
 };
