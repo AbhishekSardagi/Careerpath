@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import "./Header.css"
 import logo from "../../images/logo2.PNG"
 import SearchIcon from "@material-ui/icons/Search";
-import {auth} from "../../firebase"
+
 import {Link, Redirect} from "react-router-dom"
 import Login from '../Login/Login';
 
