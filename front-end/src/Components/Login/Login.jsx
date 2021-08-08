@@ -1,9 +1,10 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../Context/AuthContext"
-import { Link, useHistory } from "react-router-dom"
+import { Link, Redirect, useHistory } from "react-router-dom"
+import logo from "../../images/logo2.PNG"
 
-export default function Login() {
+export default function Login({auth}) {
   const emailRef = useRef()
   const passwordRef = useRef()
   const { login } = useAuth()
@@ -26,34 +27,37 @@ export default function Login() {
     setLoading(false)
   }
 
-  return (
-   <div style={{textAlign:"center",margin:"auto",backgroundColor:"black",color:"white",padding:"10px",width:"50%",marginTop:"100px"}}>
-      <Card style={{}}>
-        <Card.Body >
-          <h2 className="text-center mb-4">Log In</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <br/>
-              <Form.Control type="email" ref={emailRef} required />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label><br/>
-              <Form.Control type="password" ref={passwordRef} required />
-            </Form.Group><br/>
-            <Button style={{border:"1px solid red",width:"50%",padding:"5px",borderRadius:"10px",backgroundColor:"blue",color:"white"}} disabled={loading}  type="submit">
-              Log In
-            </Button>
-          </Form>
-          <div className="w-100 text-center mt-3">
-            <Link to="/forgot-password">Forgot Password?</Link>
-          </div>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/signup" >Sign Up</Link>
-      </div>
+  return !auth?
+  (
+      <div style={{marginTop:"50px",marginLeft:"10px"}}>
+      <Card style={{backgroundColor:"black",color:"white"}}>
+      
+      <Card.Body>
+      <img style={{width:"80%",marginLeft:"30px"}} src={logo}  />
+        <h2 className="text-center mb-4">Log In</h2>
+        {error && <Alert variant="danger">{error}</Alert>}
+        <Form onSubmit={handleSubmit}>
+          <Form.Group id="email">
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" ref={emailRef} required />
+          </Form.Group>
+          <Form.Group id="password">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" ref={passwordRef} required />
+          </Form.Group>
+          <br/>
+          <Button disabled={loading} className="w-100" type="submit">
+            Log In
+          </Button>
+        </Form>
+        <div className="w-100 text-center mt-3">
+          <Link to="/forgot-password">Forgot Password?</Link>
+        </div>
+      </Card.Body>
+    </Card>
+    <div className="w-100 text-center mt-2">
+      Need an account? <Link to="/signup">Sign Up</Link>
     </div>
-  )
+      </div>
+  ):<Redirect to="/"/>
 }

@@ -5,12 +5,13 @@ import AirplayIcon from "@material-ui/icons/Airplay";
 import FlightIcon from "@material-ui/icons/Flight";
 import GavelIcon from "@material-ui/icons/Gavel";
 import FaceIcon from "@material-ui/icons/Face";
+import "./SearchPage.css"
 function SearchPage() {
   return (
     <div>
-      <h1>Search Page</h1>
+      <h1 className="box">Search Page</h1>
       <Grid container>
-        <Box
+        <Box className="box"
           boxShadow={3}
           bgcolor="background.paper"
           m={5}

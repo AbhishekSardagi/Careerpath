@@ -4,12 +4,12 @@ import { useAuth } from "../../Context/AuthContext"
 import {  useHistory } from "react-router-dom"
 
 export default function Logout() {
-  const [setError] = useState("")
+  const [error,setError] = useState(false)
   const {  logout } = useAuth()
   const history = useHistory()
 
   async function handleLogout() {
-    setError(" ")
+    setError(true)
 
     try {
       await logout()
@@ -19,7 +19,7 @@ export default function Logout() {
     }
   }
 
-  return (
+  return  (
     <>
       
      

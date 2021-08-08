@@ -1,5 +1,7 @@
 import React from 'react'
 import Signup from "../Components/Signup/Signup"
+import { Container } from "react-bootstrap"
+
 import { AuthProvider } from "../Context/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Logout from "../Components/Logout/Logout"
@@ -10,23 +12,25 @@ import UpdateProfile from "../Components/UpdateProfile/UpdateProfile"
 import {Home} from "../Components/Homepage/Home"
 const Routes = () => {
     return (
-       
+    
   
-      <div >
+      <div className="w-100" style={{ maxWidth: "400px" }}>
         <Router>
           <AuthProvider>
+          <Route exact path="/" component={Home} />
             <Switch>
-              <PrivateRoute exact path="/" component={Home} />
-              <PrivateRoute exact path="/update-profile" component={UpdateProfile} />
+             
+              <PrivateRoute  path="/update-profile" component={UpdateProfile} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/login" component={Login} />
-              <Route exact path="/logout" component={Logout} />
+              <Route exact path="/logout"  component={Logout} />
               <Route exact path="/forgot-password" component={ForgotPassword} />
             </Switch>
           </AuthProvider>
         </Router>
            
         </div>
+      
      
     )
 }
