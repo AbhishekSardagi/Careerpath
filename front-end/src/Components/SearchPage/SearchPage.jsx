@@ -4,8 +4,7 @@ import Box from "@material-ui/core/Box";
 import AirplayIcon from "@material-ui/icons/Airplay";
 import FlightIcon from "@material-ui/icons/Flight";
 import GavelIcon from "@material-ui/icons/Gavel";
-import FaceIcon from "@material-ui/icons/Face";
-import "./SearchPage.css"
+import { Link } from "react-router-dom";
 function SearchPage() {
   return (
     <div>
@@ -19,7 +18,7 @@ function SearchPage() {
           style={{ width: "10rem", height: "10rem" }}
         >
           <AirplayIcon style={{ fontSize: 100 }} /> <br />
-          Engineering
+          <Link to="/searchpage/singlecourse">Engineering</Link>
         </Box>
         <Box
           boxShadow={3}
