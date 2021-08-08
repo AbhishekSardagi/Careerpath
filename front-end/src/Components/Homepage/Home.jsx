@@ -3,6 +3,7 @@ import React from 'react';
 import styles from "./Home.module.css";
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
+import Chat from "../Chat"
 
 const useStyles = makeStyles({
     aboutBox: {
@@ -70,6 +71,7 @@ const Home = () => {
             {/* <div style={{ height: "500px" }}>
 
             </div> */}
+            <div><Chat/></div>
         </div>
     )
 }
