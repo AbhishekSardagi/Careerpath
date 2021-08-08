@@ -6,7 +6,7 @@ import styles from "./stageone.module.css";
 function StageOne() {
   return (
     <div className={styles.cont}>
-      <h1>WHAT IS YOUR YOUR STREAM?</h1>
+      <h1>WHICH STREAM ARE YOU INTERESTED IN?</h1>
       <Grid container>
         <Box
           className={styles.a}

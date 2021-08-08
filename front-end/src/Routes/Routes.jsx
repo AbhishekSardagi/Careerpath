@@ -9,16 +9,16 @@ import { SingleCourse } from "../Components/SingleCourse/SingleCourse";
 const Routes = () => {
   return (
     <div>
-    <Switch>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/stageone" component={StageOne}/>
-    <Route path="/stageone/singlecourse" component={SingleCourse}/>
-    </Switch>
-    
-    
-          
-     
- 
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/stageone" component={StageOne} />
+        <Route path="/stageone/singlecourse" component={SingleCourse} />
+      </Switch>
+
+
+
+
+
     </div>
   );
 };
