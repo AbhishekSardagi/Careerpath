@@ -1,6 +1,10 @@
 .cont {
   background-color: #f7f7f7;
 }
+.cont H1{
+  text-align: center;;
+  padding: 5vh 0 0;
+}
 
 .a {
   position: relative;
@@ -15,14 +19,24 @@
   height: 100%;
   transform: scaleY(0);
   transform-origin: bottom center;
-  background: #ff2143;
+  background: #f52929;
   z-index: -1;
   transition: transform 0.5s;
 }
 .a:hover::after {
   transform: scaleY(1);
   transition-timing-function: ease-out;
+  /* outline: none;
+  box-shadow: 0px 0px 5px #a5dbf8;
+  border:5px solid #5AB0DB;
+  border-radius: 50px; */
 }
+/* 
+.a:hover{
+  border: 5px solid #999;
+  border-radius: 50px;
+} */
+
 .mh3 {
   padding-top: 50px;
   color: #1c165c;
