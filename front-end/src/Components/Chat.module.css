@@ -1,28 +1,17 @@
-.cont{
-    background-color: rgba(65,42,76,255);
-    border: 1px solid red;
-}
-.wrap {
-    text-align: center;
-     width:100%;
-     height:450px;
-     background-image: url("https://i1.wp.com/codemyui.com/wp-content/uploads/2016/01/owl-login-form-replica-from-readme-io_.gif?fit=880%2C440&ssl=1");
-     color: white;
-     /* z-index: -1; */
-  }
+
+
   .wrap1 {
     text-align: center;
-     width:100%;
+  border: 1px solid red;
      height:450px;
-     background-image: url("https://www.insegment.com/blog/wp-content/uploads/2020/11/chatbot-marketing.gif");
+    
      color: white;
-     /* z-index: -1; */
+     z-index: -1;
+     
   }
-.hidden{
-    display: none;
-}
 
-.main{
+
+/* .main{
     background-color:rgb(44,19,56);
     width: 40%;
     margin: auto;
@@ -30,13 +19,13 @@
     height:580px;
     margin-top: -80px;
     z-index: 1;
-}
-.forgot {
+} */
+/* .forgot {
     color: white;
     font-weight: 400;
     border-bottom: 0.5px solid rgb(229,124,216);
-}
-.h2log{
+} */
+/* .h2log{
 
     font-size: 50px;
     color: black;
@@ -46,13 +35,13 @@ margin-left: 500px;
     width: 320px;
     background-color: hotpink;
     text-align: center;
-}
-.bottom > p{
+} */
+/* .bottom > p{
     margin-top: 4%;
     text-align: center;
     color: white;
     font-size: 25px;
-}
+} */
 .linkbutton {
     width:15%;
     justify-content: center;

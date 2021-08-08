@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <Box style={{ width: "100%" }}>
+    <Box style={{ width: "100%" ,marginTop:"50px"}}>
       <Container>
         <Row>
           <Column>
